@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from Tkinter import ALL, Canvas, Frame, SUNKEN, Tk
+from tkinter import ALL, Canvas, Frame, SUNKEN, Tk
 import colorsys
 
 """

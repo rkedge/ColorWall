@@ -305,7 +305,7 @@ class Matrix(Effect):
         wall.
         """
         timeout = 4
-        drawing = 0
+        drawing = 1 # was 0, 1 slows down the animation
         while drawing or timeout:
             self.wall.clear()
             for col in cols:
@@ -338,7 +338,7 @@ class LetterTest(Effect):
 
         # Display upper and lower case letters. The break between 90 and 97 is
         # for non-letter keyboard characters.
-        for ord in range(65, 91) + range(97, 123):
+        for ord in range(65, 91) and range(97, 123): # python 3 syntax
             self.wall.clear()
 
             # Set every pixel to the background color, since ascii8x8 will only
